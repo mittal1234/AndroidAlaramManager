@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmManagerActivity">
+
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:id="@+id/rd_Notification"
+                android:text="Notification"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:id="@+id/rd_Toast"
+                android:text="Toast"/>
+
+        </RadioGroup>
+
+
+        <Button
+            android:layout_below="@id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_one_time_alarm"
+            android:layout_marginTop="15dp"
+            android:text="onetimeAlaram"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:layout_below="@id/btn_one_time_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/btn_repeat_alaram"
+            android:text="Repeat Alaram"
+            android:background="@color/colorAccent" />
+    </RelativeLayout>
+
